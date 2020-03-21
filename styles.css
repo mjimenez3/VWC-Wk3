@@ -1,0 +1,227 @@
+.container {
+  display: grid;
+  grid-template-rows: 12em 28em 30em 35em 15em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "hd hd hd hd logo logo"
+    "hd hd hd hd text text"
+    "hd hd hd hd text text"
+    "vid vid vid map map map"
+    "ft ft ft ft ft ft";
+   color:#000b2b; 
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+
+}
+li {
+  list-style-type: none;
+}
+.img1 {
+  width: 100%;
+  height: auto;
+}
+.header {
+  grid-row: 1 / 4;
+  grid-column: 1 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000b2b;
+}
+.logo {
+  grid-column: 5 / 7;
+  grid-row: 1 / 2;
+  display: flex;
+  background-color: #000b2b;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 22px;
+  grid-row: 2 / 4;
+  grid-column: 5 / 7;
+  color: #000b2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: #e8e9eb;
+  overflow: hidden;
+  padding-right: 5px #000b2b;
+}
+.video {
+  grid-area: vid;
+  border: solid;
+  background-color: #000b2b;
+  border-color: #000b2b;
+}
+.video-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.video-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.video-container-4x3 {
+  padding-top: 75%;
+}
+.map {
+  grid-area: map;
+  border: solid;
+  background-color: #000b2b;
+  border-color: #000b2b;
+}
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+.footer {
+  grid-area: ft;
+  border: solid;
+  border-color: #000b2b;
+  background-color: #000b2b;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.mlb {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.address {
+  color: white;
+}
+.white {
+  color: #000b2b;
+  text-align: center;
+}
+.blue {
+  color: white;
+  text-align: center;
+}
+.highlights-btn, .tickets-btn, .loc-btn {
+  background-color: #000b2b;
+  text-decoration: none;
+  font-size: 20px;
+}
+/*For sign up form*/
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #000b2b;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #000b2b;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #000b2b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+button:hover {
+  opacity:2;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.cont {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#iddrop {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 11px;
+  }
+
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 11px;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  * {
+    width: 100%
+  }
+  /*For sign up form*/
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }

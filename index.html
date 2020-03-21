@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Los Angeles Dodgers Overview</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+               <div><img class="img1" src="bellinger2.jpg"
+                alt="Los Angeles Dodgers">
+               </div>
+            </div>
+            <div class="logo">
+                <input class="button" type="image" src="dodgerslogo.svg" onclick="window.location.href='https://www.mlb.com/dodgers';" alt="Dodgers.com" value="Dodgers.com">
+            </div>
+            <div class="text">
+                <h2 class="white" style="font-size:40px">CODY BELLINGER FAN CLUB</h2>
+                <div class="dropdown">
+                    <button onclick="document.getElementById('iddrop').style.display='block'" class="drop" style="font-size:20px"><u>Sign up to be in Bellinger's Fan Club</u></button>
+                    <div id="iddrop" class="dropdown-content">
+                        <form action="fanclub.html" style="border: 1px solid #ccc">
+                            <div class=".cont">
+                                <h1>Sign Up</h1>
+                                <p>Fill out to be Cody Bellinger's Biggest Fan!</p>
+                                <hr>
+
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="John Smith" name="name" required>
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="email@example.com" name="email" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="text" placeholder="Password" name="psw" required>
+
+                                <label for="psw-repeat"><b>Confirm Password</b></label>
+                                <input type="text" placeholder="Confirm Password" name="psw-repeat" required>
+
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+                                </label>
+
+                                <div class="clearfix">
+                                    <button type="button" class="cancelbtn" onclick="closeForm()">Cancel</button>
+                                    <button type="submit" class="signupbtn">Submit</button>
+                                </div>
+                            </div>
+                        </form>    
+                    </div>
+                        <button type="button" class="hghlght-btn"><a href="#high" style="font-size:20px">Watch Cody Bellinger's Highlights</a></button><br>
+                        <button type="button" class="tickets-btn"><a href="https://www.mlb.com/dodgers/tickets">Buy tickets to see Bellinger play</a></button><br>
+                        <button type="button" class="loc-btn"><a href="#direct">Get directions to Dodger's Stadium</a></button><br>
+                     
+                </div>
+            </div>     
+            <div class="video" id="high">
+                <h1 class="blue"><u>Highlights</u></h1>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Hw0h62noMts" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>      
+            </div>
+            <div class="map" id="direct">
+                <h1 class="blue"><u>Location</u></h1>
+                <div class="iframe-container"> 
+                    <iframe src="https://maps.google.com/maps?q=dodgers%20stadium&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>    
+            </div>
+            <div class="footer">
+                <div class="mlb">
+                    <img src="mlblogo.png" alt="mlb logo">
+                         <p class="address">
+                            Los Angeles Dodgers<br> 
+                            1000 Vin Scully Ave. 
+                            Los Angeles, CA 90012
+                        </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openForm() {
+                document.getElementById("iddrop").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("iddrop").style.display = "none";
+            }    
+        </script>
+    </body>
+</html>
